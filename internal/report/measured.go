@@ -76,8 +76,7 @@ func Compare(c ceiling.Ceilings, m Measured) []Comparison {
 	return rows
 }
 
-func PrintComparison(w io.Writer, m Measured, rows []Comparison) error {
-	fmt.Fprintf(w, "model %s, max_tokens %d, median of %d runs\n\n", m.Model, m.MaxTokens, m.Repeats)
+func PrintComparison(w io.Writer, rows []Comparison) error {
 	tw := newTable(w)
 	fmt.Fprintln(tw, "CONCURRENCY\tPREDICTED CEIL\tLIMIT\tMEASURED\t% OF CEIL")
 	for _, r := range rows {

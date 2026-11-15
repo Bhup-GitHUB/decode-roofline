@@ -62,7 +62,7 @@ func TestLoadAndCompareMeasured(t *testing.T) {
 	}
 
 	var out bytes.Buffer
-	if err := PrintComparison(&out, m, rows); err != nil {
+	if err := PrintComparison(&out, rows); err != nil {
 		t.Fatal(err)
 	}
 	if !strings.Contains(out.String(), "80.0%") {
