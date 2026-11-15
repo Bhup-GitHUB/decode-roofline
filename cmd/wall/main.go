@@ -32,6 +32,8 @@ func main() {
 func run(args []string, stdout, stderr io.Writer) error {
 	if len(args) > 0 {
 		switch args[0] {
+		case "compare":
+			return runCompare(args[1:], stdout, stderr)
 		case "help":
 			fmt.Fprint(stdout, usage)
 			return nil
