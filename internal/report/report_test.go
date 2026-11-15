@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
 )
 
 func TestGroupThousands(t *testing.T) {

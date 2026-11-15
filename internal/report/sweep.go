@@ -6,7 +6,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
 )
 
 func PrintSweep(w io.Writer, points []ceiling.Point) error {

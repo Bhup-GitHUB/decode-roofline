@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/gpu"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/model"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/gpu"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/model"
 )
 
 type hardwareFlags struct {

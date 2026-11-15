@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
 )
 
 type SingleStream struct {

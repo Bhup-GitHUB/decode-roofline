@@ -6,10 +6,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/gpu"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/model"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/report"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/gpu"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/model"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/report"
 )
 
 const maxSweepBatch = 256

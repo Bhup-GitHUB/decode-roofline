@@ -106,7 +106,7 @@ def parse_levels(text):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Measure vLLM decode throughput for gpu-memory-wall.")
+    ap = argparse.ArgumentParser(description="Measure vLLM decode throughput for decode-roofline.")
     ap.add_argument("--base-url", default="http://localhost:8000/v1")
     ap.add_argument("--model", required=True)
     ap.add_argument("--max-tokens", type=int, default=256)

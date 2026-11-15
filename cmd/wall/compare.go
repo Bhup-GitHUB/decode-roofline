@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/gpu"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/report"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/gpu"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/report"
 )
 
 func runCompare(args []string, stdout, stderr io.Writer) error {

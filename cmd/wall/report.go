@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/report"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/report"
 )
 
 func runReport(args []string, stdout, stderr io.Writer) error {

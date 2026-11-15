@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/ceiling"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/gpu"
-	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/model"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/ceiling"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/gpu"
+	"github.com/Bhup-GitHUB/decode-roofline/internal/model"
 )
 
 func fitLabel(g gpu.Spec, m model.Model) string {

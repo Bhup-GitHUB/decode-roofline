@@ -1,4 +1,4 @@
-# gpu-memory-wall
+# decode-roofline
 
 When an LLM generates one token, the GPU has to stream every weight out of HBM.
 At batch 1 that read takes far longer than the math, so the tensor cores sit
