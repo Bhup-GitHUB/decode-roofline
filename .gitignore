@@ -1,0 +1,6 @@
+/bin/
+/wall
+sweep.csv
+measured.json
+__pycache__/
+.venv/
