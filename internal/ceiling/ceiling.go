@@ -1,6 +1,11 @@
 package ceiling
 
-import "math"
+import (
+	"math"
+
+	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/gpu"
+	"github.com/Bhup-GitHUB/gpu-memory-wall/internal/model"
+)
 
 type Limit string
 
@@ -71,4 +76,11 @@ func (c Ceilings) Sweep(batches []int) []Point {
 		points[i] = c.At(b)
 	}
 	return points
+}
+
+func For(g gpu.Spec, m model.Model) Ceilings {
+	return Ceilings{
+		Memory:  Memory(g.BandwidthGBs, m.WeightsGB()),
+		Compute: Compute(g.TFLOPS, m.FlopsPerToken()),
+	}
 }
